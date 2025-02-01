@@ -30,7 +30,7 @@ This website does not use Google fonts from the Google CDN. It uses a self-hoste
 
 If and where Youtube videos are embedded in this site, we use the Youtube privacy-enhanced embed mode. [Learn More](https://support.google.com/youtube/answer/171780?hl=en#zippy=%2Cturn-on-privacy-enhanced-mode)
 
-**Contact Form**
+<!-- **Contact Form**
 
 We may request your personal information via our contact form. Personally identifiable information may include, but is not limited to:
 
@@ -61,7 +61,7 @@ Any data you submit in this form may be shared with 3rd party service providers.
 
 When posting comments on this site, your data may be shared with a 3rd party service. These providers include, but are not limited to:
 
-- [Disqus](https://disqus.com/privacy-policy/)
+- [Disqus](https://disqus.com/privacy-policy/) -->
 
 
 ---

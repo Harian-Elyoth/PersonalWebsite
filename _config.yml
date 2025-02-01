@@ -168,7 +168,7 @@ comments:
 
 # Contact Form Settings
 contact_form: 
-  use_netlify_form: true    # Form handling configuration
+  use_netlify_form: false    # Form handling configuration
   use_formspree_form: false
   formspree_endpoint: https://formspree.io/f/moqyklqv
   netlify_form_name: "contact"
