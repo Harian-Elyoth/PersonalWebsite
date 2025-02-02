@@ -1,61 +1,83 @@
 ---
 layout: default
-body_classes: page-blog page-blog-3
+body_classes: page-post page-post-3
 ---
 
 <div class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        {% include framework/title.html
-        title=page.title
-        description=page.description
-        image=page.image
-        %}
+  <div class="container post-header">
+    <div class="row justify-content-center">
+
+      <div class="col-12 col-lg-6">
+        {% if page.image %}
+          <div class="post-image">
+            <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" />
+          </div>
+        {% endif %}
       </div>
+
+      <div class="col-12 col-lg-6">
+          
+          <div class="post-title">
+            <h1>{{ page.title }}</h1>
+          </div>
+
+          {% if page.description %}
+            <div class="post-description">
+              <p>{{ page.description }}</p>
+            </div>
+          {% endif %}
+
+          {% if page.date %}
+            <div class="post-date">{{ page.date | date_to_long_string }}</div>
+          {% endif %}
+          
+          {% if page.categories %}
+          <div class="post-categories">
+          {% include framework/categories-badges.html 
+              categories=page.categories
+          %}
+          </div>
+          {% endif %}
+
+          {% if page.authors %}
+            <div class="post-authors">
+              {% for author in page.authors %}
+              {% assign author_id = author | replace: " ", "_" | downcase %}
+              {% assign author_object = site.data.authors[author_id] %}
+              {% include framework/author.html 
+                name=author_object.name
+                job=author_object.job
+                image=author_object.image
+              %}
+              {% endfor %}
+            </div>
+          {% endif %}
+
+      </div>
+
     </div>
   </div>
 </div>
 
 <div class="section pt-0">
   <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-12">
-          <div class="row">
-            {% assign projects = site.projects %}
-            {% if paginator %}{% assign projects = paginator.projects %}{% endif %}
-            
-              {% if paginator %}
-                <div class="col-12">
-                  {% include framework/paginator-count.html %}
-                </div>
-              {% endif %}
-
-              {% for project in projects %}
-                <div class="col-12 col-md-6 mb-3 mb-md-6 mb-lg-12">
-                  {% include theme/cards/card-project.html
-                    date=project.date
-                    title=project.title
-                    description=project.description 
-                    thumbnail=project.thumbnail
-                    url=project.url
-                    authors=project.authors
-                    categories=project.categories
-                    show_read_more=false
-                    style="full"
-                  %}
-                </div>
-              {% endfor %}
-          </div>
-        </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <div class="content">{{ content }}</div>
+        {% include framework/comments.html %}
       </div>
-      {% if paginator %}
-      <div class="row justify-content-center">
-        <div class="col-auto">
-          {% include framework/paginator.html %}
-        </div>
-      </div>
-      {% endif %}
+    </div>
   </div>
 </div>
 
+{% if site.newsletter.mailchimp.form_action_url and site.newsletter.mailchimp.form_action_url != '' %}
+<div class="section section-base-bg-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        {% include framework/subscribe.html %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}

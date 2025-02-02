@@ -17,6 +17,19 @@ body_classes: page-contact
   </div>
 </div>
 
+{% assign content = content | strip_newlines %}
+{% if content != "" %}
+<div class="section">
+  <div class="container">
+    <div class="row justify-content-start">
+      <div class="col-12 col-lg-8">
+        <div class="content">{{ content }}</div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
 <div class="section pt-0">
   <div class="container">
     <div class="row justify-content-start">
@@ -45,15 +58,3 @@ body_classes: page-contact
   </div>
 </div>
 
-{% assign content = content | strip_newlines %}
-{% if content != "" %}
-<div class="section">
-  <div class="container">
-    <div class="row justify-content-start">
-      <div class="col-12 col-lg-8">
-        <div class="content">{{ content }}</div>
-      </div>
-    </div>
-  </div>
-</div>
-{% endif %}

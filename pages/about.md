@@ -1,46 +1,35 @@
 ---
 layout: basic
-title: "About Us"
+title: "About Me"
 date: 2018-11-28T15:15:34+10:00
 permalink: "/about/"
-description: "Business plan hackathon handshake responsive web design."
+description: "About me"
 image: "/assets/images/gen/content/content-5.webp"
 ---
 
-# Creating Modern Websites
+# About Me  
 
-Web design encompasses many different skills and disciplines in the production and maintenance of websites.
+Hey there! I'm Elyoth Harian, a French software engineer with a deep passion for project management, learning, and making things run smoother. I love optimizing workflows, finding better ways to collaborate, and exploring how technology can make our lives easier.  
 
-Often many individuals will work in teams covering different aspects of the design process, although some designers will cover them all. Web design partially overlaps web engineering in the broader scope of web development.
+### My Journey So Far  
 
-## What is Web Design?
+I graduated from **Polytech Sorbonne** with an engineering degree, and since then, my career has been quite an adventure. I worked at **SAGEMCOM** and **Thales**, where I got to tackle complex tech challenges and learn from some incredible people. On top of that, I had the chance to teach **IoT at Sorbonne University**, which was an amazing experience—I love sharing knowledge and helping others grow.  
 
-User experience is about how a user interacts with, and experiences, a particular product, system or service. As a UX designer, you should consider the Why, What and How of product use.
+But I’ve always had that itch to build something of my own. That’s why I started working on **ThinkStorm**, a collaborative platform designed to make teamwork more efficient and seamless. It’s still a work in progress, but I’m excited about what’s coming next!  
 
-{% include framework/shortcodes/figure.html src="/assets/images/gen/content/content-1.webp" title="Steve Francia" caption="Designing in Figma" alt="Photo of designing a website in Figma" link="https://figma.com" target="_blank" %}
+### A New Chapter in South Korea  
 
-## Front-end Development
+Recently, I decided to shake things up and move to **South Korea** with my wife. New culture, new opportunities, new challenges—it’s a wild ride, and I’m here for it! Adapting to life here has been an adventure in itself, and I plan to share my experiences along the way.  
 
-The What addresses the things people can do with a product—its functionality. Finally, the How relates to the design of functionality in an accessible and aesthetically pleasant way. UX designers start with the Why before determining the What and then, finally, the How in order to create products that users can form meaningful experiences with. In software designs, you will need to ensure the product’s “substance” comes through an existing device and offers a seamless, fluid experience.
+### What You'll Find Here 
 
-> As a UX designer, you should consider the Why, What and How of product use.
+This blog is my space to talk about the things that drive me:  
+🚀 **Project management** – Strategies, tools, and real-life experiences.  
+💡 **Collaboration & productivity** – How to work smarter, not harder.  
+🌍 **Life in South Korea** – The highs, the lows, and everything in between.  
+🔧 **Tech & side projects** – Cool things I'm building and learning.  
 
-Web designers are expected to have an awareness of usability and if their role involves creating markup then they are also expected to be up to date with web accessibility guidelines.
+I'd love to connect with like-minded people, exchange ideas, and learn from different perspectives. So, feel free to reach out—let's talk!  
 
-## Design Systems
-
-A Design System is a set of interconnected patterns and shared practices coherently organized to aid in digital product design and development of products such as apps or websites.
-
-{% include framework/shortcodes/youtube.html id='2M6dJ2Uynhg' %}
-
-## Process
-
-There are two primary jobs involved in creating a website: the web designer and web developer, who often work closely together on a website. The web designers are responsible for the visual aspect, which includes the layout, coloring and typography of a web page.
-
-- User experience research
-- Visual design and illustration
-- Programming and coding
-
-![Design In Figma](/assets/images/gen/content/content-2.webp)
-
-Web designers will also have a working knowledge of markup languages such as HTML and CSS, although the extent of their knowledge will differ from one web designer to another.
+Thanks for stopping by, and I hope you enjoy the ride with me. 🚀  
+[Let's talk together 😊 →](/contact)
